@@ -217,7 +217,7 @@ class Profile(models.Model):
         ('masculin', 'Masculin'),
         ('féminin', 'Féminin')
     )
-    user = models.OneToOneField(User, on_delete=models.SET_NULL, blank=True,  null=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True,  null=True)
     image = models.ImageField(upload_to='images/profile/%Y/', null=True, blank=True, help_text="ajouter une photo")
     phone = models.PositiveIntegerField(null=True, unique=True, blank=True, 
         help_text="le numéro de télephone doit avoir 9 chiffres",
