@@ -51,8 +51,6 @@ INSTALLED_APPS = [
 ]
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
 SHORT_DATE_FORMAT = 'd/m/Y'
 
 DATE_INPUT_FORMATS = [
